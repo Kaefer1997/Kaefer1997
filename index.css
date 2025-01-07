@@ -1,0 +1,406 @@
+	/* ======================= Menu-Buttons-Steuerung allgemein =======================  */
+	#bereichlogo {
+		/* Button, links oben in der Ecke
+		 * Duerch das # vor dem Tag wird der Link zum Button */
+		 /* Ist Geich */
+		color: white;
+		background-color: #064247; 	
+		display: block;
+		padding: 0.5em;
+		text-decoration: none;
+		float: left;	
+		width: auto;
+	}
+
+		 /* Ist Geich */
+	#steuerung {
+		float: right;  /* Buttons 'Mein Käfer', .... , 'Inpressum' rechts ausrichten */
+	}
+
+		 /* Ist Geich */
+	#steuerung li {
+		/* Buttons 'Mein Käfer', .... , 'Inpressum' */
+		list-style: none;
+		float: left;
+	}
+		
+		/* Ist Geich */
+	#steuerung a {
+		/*inaktiver Button, rechts oben in der Ecke */
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 0.5em;
+		text-decoration: none;
+		color: white;
+		background-color: rgb(128, 143, 142);
+	}	
+
+		 /* Ist Geich */
+	#steuerung a:hover {
+		/*aktiver Button, rechts oben in der Ecke */
+		color: white;
+		background: #064247; 
+	}	
+
+		 /* Ist Geich */
+	.menue-button {
+		/*	CSS MENÜ-Button untereinander und entsprechende Steuerung aus 
+			bei größer @media only screen and (max-width:600px) 
+			Durch den Punkt vor dem Tag wird der Link unichtbar*/
+		display: none;
+	}		
+
+	/* ======================= Menu-Buttons-Steuerung allgemein Ende =======================  */
+
+
+		 /* Ist Geich */
+	/* ======================= Für Html-Seite =======================  */
+	header {
+		background-color: rgb(128, 143, 142);
+		width: 100%;
+		float: left;
+	}
+
+    /* fuer index.html, Mein_Kaefer.html, Galerie.html */
+	#box1 {
+		/* Das Hash bei #box1Index steht für id z.B. <div id=... */
+		min-height: 100vh;
+		background: url('Kaefer_Horizontal_Rauschen02.JPG'); 
+		background-repeat: no-repeat;
+		background-position: 100% 7%;
+		background-attachment: fixed;
+		background-size:46% auto;
+		background-color: #053135; /* #00272F; #012E38;*/
+	}
+
+	#boxImpressum {
+		min-height: 100vh;
+		background: url('Kaefer_Horizontal_sw_grün_01.jpg') no-repeat center fixed;
+		background-size: cover;
+		background-color: #053135;
+	}
+
+	#RandImpressum {
+		margin-left: 40px;
+		margin-right: 40px;	
+
+	}
+
+	.My_Text_Galerie {
+		margin-left: 40px;
+		margin-right: 40px;	
+
+	}
+	
+	/* Nur fuer Reise_Brenner_u_Penser_Joch.html */
+	#box1ReiseBrenner {
+		/* Das Hash bei #box1 steht für id z.B. <div id=... */
+		min-height: 100vh;
+		background-color: #053135; /*#012E38;*/
+		background-repeat: no-repeat;
+		background-position: 100% 30%;
+		background-attachment: fixed;
+		background-size:46% auto;
+		background-color: #053135; /* #00272F; #012E38;*/
+	}
+
+	/* fuer index.html, Mein_Kaefer.html, Galerie.html */
+	#box2 {
+		min-height: 100vh;
+		background-color: #053135; /*#012E38;*/
+		width: 50%;
+	}
+
+
+	/* Nur fuer Reise_Brenner_u_Penser_Joch.html */
+	#box2ReiseBrenner {
+		display: none ; 
+	}
+
+	/* Nur fuer inder.html */
+	.txtIndex {
+		/* Der Punkt bei .txtIndex steht für class, z.B. <div class=.. */
+		/* Begrüßungstext-Einstellungen 
+		in box2 <div class="txtIndex"> */
+		position: auto;
+		width:auto;
+		padding: 1.5em;
+		color: white;
+		margin-left: 5px;
+		font-size: medium;
+
+	}
+	
+	/* Nur fuer Reise_Brenner_u_Penser_Joch.html */
+	.txtReiseBrenner {
+		/* Der Punkt bei .txtReiseBrenner steht für class, z.B. <div class=.. */
+		/* Begrüßungstext-Einstellungen 
+		in box2ReiseBrenner <div class="txtReiseBrenner"> */
+		position: auto; 
+		width:auto;
+		padding: 1.5em;
+		color: white;
+		margin-left: 5px;
+		font-size: medium; 
+
+	}
+
+	.My_Text {
+		/* Der Punkt bei .My_Text steht für class, z.B. <div class=.. */
+		/* Begrüßungstext-Einstellungen 
+		in Box2 <div class="My_Text"> */
+		position: auto;
+		width:auto;
+		top: 7px; 
+		padding: 1.5em;
+		color: white;
+		margin-left: 3%;
+		font-size: 18px; 
+		font-family: sans-serif;
+		/* margin-bottom: 5%; Änderung */
+	}
+	.My_Text_IMG {
+		display: none;
+	}
+	
+
+	img {
+		height: auto;
+		width: 40%;
+	}
+
+	/* Grundeinstellungen fuer die Galleri */
+	div.gallery {
+		margin-left: -10px; /* -10px wegen div.gallery_img( border: 10px solid #053135;) */
+		margin-top: 20px;
+		float: left;
+	}
+
+	div.gallery img {
+		width: auto;
+		height: 350px;
+		border: 10px solid #053135;
+	}
+
+	div.desc {
+		text-align: center;
+		max-width: 100%;
+		font-size: small; /* 12px; */
+	}
+
+	div.galleryEnde {
+		float: both;
+		width: 1px; 
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	/* Grundeinstellungen fuer die Galleri ENDE*/
+	
+
+	/* Fuer index.html, Reise_Brenner_u_Penser_Joch.html */
+	.footer {
+		/* Für Fußzeile mit Hnweistext */
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #032124; 
+		color: white;
+		text-align: center;
+	}
+
+
+	/*	CSS MENÜ-Button untereinander und entsprechende Steuerung ein 
+			bei kleiner @media only screen and (max-width:600px) */
+	@media only screen and (max-width:800px) {
+
+		/* ======================= Menu-Buttons-Steuerung, wenn Screen-Breite kleiner 600 =======================  */
+		/* Dieser Block ist fuer index.html, Reise_Brenner_u_Penser_Joch.html */
+		#bereichlogo {
+			/* Button, links oben in der Ecke 
+			Hier Einstellungen die vom #bereichlogo aus vor "@media only screen and ()..." abweichen */
+			color: white;
+		}
+
+		.menue-button {
+			/* fuer Menue auf zu */
+			background-color: rgb(128, 143, 142);      /* Farbe des Button Menu auf oder Menu zu */
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 0.5em;
+			color: white;
+			cursor: pointer;
+			text-decoration: none;
+		}	
+
+		#steuerung {
+			/* Buttons 'Mein Käfer', .... , 'Inpressum' links ausrichten und erstmal nicht sichtbar machen.
+			Buttons werden später sichtbar, wenn 'Button Menu auf' angeklickt wurde.*/
+			float: left;
+			width: 100%; 
+			display: none;
+			
+		}	
+
+		#steuerung li {
+			/* Buttons 'Mein Käfer', .... , 'Inpressum' */
+			width: 100%; 
+			border-top: 2px solid silver; /* Menue-Hintergrund-Rand-Farbe */
+		}	
+
+		.menue-button:hover {
+			color: white;
+			background: #064247; 	
+		}
+
+		/* die Magie, um die Steuerung einzublenden (auch auf mobile Devices) */
+		#nav-menue:target #steuerung {
+			display: block;
+		}
+		
+		/* ausblenden des Menü-Buttons zum öffnen - somit wird der zum Schließen sichtbar */
+		#nav-menue:target .menue-button-beschr-open {
+			display: none ; 
+		}	
+		/* ======================= Menu-Buttons-Steuerung, wenn Screen-Breite kleiner 600 Ende =======================  */
+
+
+
+
+		/* ======================= Ergänzungen für Html-Seite, wenn Screen-Breite kleiner 600 =======================  */
+		#box1 {
+			background: url('');
+			width: 100%; 
+			/*position: fixed;*/
+			background-color: #053135;
+		}
+				
+		#box1ReiseBrenner {
+			background: url('');
+			width: 100%; 
+			left: 0px;
+			/*position: fixed;*/
+			background-color: #053135;
+		}
+		
+		
+		#box2 {
+			background-color: #053135; 
+			width: 90%; /* box2 90% breite von box1Index */
+			left: 0px;
+			margin: auto;  /*box2 zentrieren in box1Index */
+		}
+
+		#box2ReiseBrenner {
+			background-color: #053135; 
+			width: 90%; /* box2ReiseBrenner 90% breite von box1ReiseBrenner */
+			left: 0px;
+			margin: auto;  /*box2ReiseBrenner zentrieren in box1ReiseBrenner */
+		}
+
+		.txtIndex {
+			/* Begrüßungstext-Einstellungen 
+			in box2 <div class="txtIndex"> */
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height:80%; 
+			padding: 0.0em; 
+			text-align: center;
+			margin-left: 0px;
+			margin-bottom: 60px;
+		}
+		
+		.txtReiseBrenner {
+			/* Begrüßungstext-Einstellungen 
+			in box2ReiseBrenner div class="txtReiseBrenner" */
+			
+			text-align: center;
+
+		}
+				
+		.My_Text {
+			/* Begrüßungstext-Einstellungen 
+			in Box2 <div class="My_Text"> */
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height:80%; 
+			padding: 0.0em; 
+			text-align: center;
+			margin-left: 0px;
+			margin-bottom: 60px;
+		}
+		.My_Text_IMG {
+			height: auto;
+			width: 120%;
+
+			/* Die folgenden Zeilen sind zum Bild zentrieren*/
+			margin-left: -50px;
+			padding-top: 80px; 
+			display: block;
+		}
+
+
+
+	} /* @media only screen and (max-width:600px) --- ENDE ---  */
+
+
+	/* Handy-Format */
+	@media only screen and (max-width:700px) {
+
+		div.gallery img {
+			width: auto;
+			height: 240px;
+			border: 10px solid #053135;
+		}
+	
+	}
+
+
+	/* Allgemein Anweisungen */
+	/* Fuer index.html, Reise_Brenner_u_Penser_Joch.html */
+	* {
+		/* Button-Text-Position für alle Buttons
+		   In diesem Fall nur für die Buttons, 
+		   da alle anderen Objekte ihre Eigenschaften wo anders definiert werden*/
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+		box-sizing: border-box;
+		
+		
+	}
+
+	Font1 { 
+		font-size: 1.3em;
+		font-family: sans-serif;
+		/* #380e9c; dunkelblau */
+		color: white;
+		/*text-shadow:  1px  1px 1px black,
+					1px -1px 1px black,
+					-1px  1px 1px black,
+					-1px -1px 1px black;*/
+	}
+
+	/* Fuer index.html, Reise_Brenner_u_Penser_Joch.html */
+	section {
+		/* Allgemeines Verhalten der aktiven Buttons */
+		padding: 0.0em;
+		float: left;
+		width: 100%;		
+	}
+
+	/* Fuer index.html, Reise_Brenner_u_Penser_Joch.html */
+	h1, p {
+		/* Text-Positionierung von Tag <h1> und <p>, Rand links rechts */
+		/*margin-left: 40px;
+		margin-right: 40px; */
+	}	
+	

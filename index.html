@@ -3,177 +3,67 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Diese Seite ist noch im Aufbau.</title>
-	
-<style type="text/css">
-	#box1 {
-	min-height: 100vh;
-	background: url('Kaefer_Horizontal.JPG') no-repeat center fixed;
-	background-size: cover;
-
-	}
-	
-* {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-	
-header {
-	background-color: yellow;
-	background-color: gray;
-	width: 100%;
-	float: left;
-	border-bottom: 1px solid black;
-}
-	
-#bereichlogo {
-	color: white;
-	background-color: limegreen;		
-	display: block;
-	padding: 0.5em;
-	text-decoration: none;
-	float: left;	
-}
-
-#bereichlogo {
-	width: auto;
-}
-	
-#steuerung li {
-	list-style: none;
-	float: left;
-}
-	
-#steuerung a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	padding: 0.5em;
-	text-decoration: none;
-	color: white;
-	background-color: gray;
-}	
-
-.menue-button {
-	display: none;
-}		
-	
-#steuerung {
-	float: right;
-}
-	
-#steuerung a:hover {
-	color: black;
-	background: orange;
-}	
-
-/* CSS erweitern um MENÜ-Button und entsprechende Steuerung */
-/*	Menü-Button oben rechts einblenden bei kleiner als 600px */
-@media only screen and (max-width:600px) {
-	.menue-button {
-		display: block;
-	}
-
-	.menue-button {
-		background-color: darkblue;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-		padding: 0.5em;
-		color: white;
-		cursor: pointer;
-		text-decoration: none;
-	}	
-
-	#bereichlogo {
-		width: 100%;
-	}
-
-	#steuerung {
-		float: left;
-		width: 100%;
-		display: none;
-	}	
-
-	#steuerung li {
-		width: 100%;
-		border-bottom: 2px solid silver;
-	}	
-
-	.menue-button:hover {
-		color: black;
-		background: orange;
-	}
-	
-	#box1 {
-	min-height: 100vh;
-	background: url('Kaefer_vertikal.JPG') no-repeat center fixed;
-	background-size: cover;
-
-	}
-	
-}
-
-/* die Magie, um die Steuerung einzublenden (auch auf mobile Devices) */
-#nav-menue:target #steuerung {
-	display: block;
-}
-	
-/* ausblenden des Menü-Buttons zum öffnen - somit wird der zum Schließen sichtbar */
-#nav-menue:target .menue-button-beschr-open {
-	display: none ; 
-}	
-	
-/* Allgemein Anweisungen */
-section {
-	padding: 0.5em;
-	float: left;
-	width: 100%;
-}
-
-h1, p {
-	margin: 0.5em 0 0 0;
-}	
-
-
-
-
-</style>	
+    <title>Jörn's 1600i Käfer-Page</title>
+    	
+	<link rel="stylesheet" href="./index.css">
 
 </head>
 
 <body>
-<header id="nav-menue">
-	<a href="#" id="bereichlogo">Test-Seite</a>
-    <nav id="steuerung">
-    	<ul>
-           <li><a href="#">Startseite</a></li>
-           <li><a href="#">HTML lernen</a></li>
-           <li><a href="#">Beispiele</a></li>
-           <li><a href="#">Kontakt</a></li>
-           <li><a href="#">Impressum</a></li>
-        </ul>
-    </nav>
-    <a class="menue-button menue-button-beschr-close" 
-       href="#nav-menue-zu">MENÜ zu</a>
-    <a class="menue-button menue-button-beschr-open" 
-       href="#nav-menue">MENÜ auf</a>
-</header>
+	<!-- Kopfzeile -->
+	<header style="position: fixed; z-index: 1;" id="nav-menue">
+		<a href="" id="bereichlogo">Startseite</a>
+		<nav id="steuerung">
+			<ul>
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="Mein_Kaefer.html">Mein Käfer</a></li>
+				<li><a href="Galerie.html">Galerie</a></li>
+				<li><a href="Arbeiten.html">Arbeiten</a></li>
+				<li><a href="Impressum.html">Impressum</a></li>
+			</ul>
+		</nav>
+		<a class="menue-button menue-button-beschr-close" 
+		href="#nav-menue-zu">MEN&Uuml; zu</a>
+		<a class="menue-button menue-button-beschr-open" 
+		href="#nav-menue">MEN&Uuml; auf</a>
+	</header>
 
+	<section>
+		
+		<div id="box1">
 
-	
-<section>
-	
-	<div id="box1">
-	<h1>Menü</h1>
-	<h2>Steuerung für mobile Geräte</h2>
-	<p>Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau.</p>
-	<p>Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau. Diese Seite ist noch im Aufbau.</p>
+			<div id="box2">
+				<div class="My_Text">
+					<div class="My_Text_IMG">
+						<img src = "Kaefer_Horizontal_Rauschen00.JPG" class="center">
+					</div>
+
+					<br>
+					<h1>Moin,</h1>
+					<br>
+					<p>
+						willkommen auf Jörn‘s 1600i Käfer Page.<br><br> 
+						Dies ist meine kleine private Seite.<br>
+						An der schreibe ich um von meinen Erfahrungen mit meinem K&auml;fer zu berichten.<br> 
+						Und vielleicht meldet sich der/die ein oder andere Gleichgesinnte.
+						<br>
+						<br>
+						<br>
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+	</section>	
+
+	<div class="footer">
+		<p style="padding: 12px;">	<u>Noch ein Hinweis:</u>
+			Für alle Infos und Hinweise auf dieser Homepage übernehme ich keine Gewähr. 
+			Das Nachmachen der beschriebenen Tätigkeiten geschieht auf eigene Verantwortung.
+		</p>
 	</div>
-</section>	
-
 
 </body>
+
 </html>
