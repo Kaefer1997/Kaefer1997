@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jörn's 1600i Käfer-Page</title>
+ 
+	<link rel="stylesheet" href="./index.css">
+
+<!--	
+<style type="text/css">
+
+
+	/* ======================= Menu-Buttons-Steuerung allgemein =======================  */
+	#bereichlogo {
+		/* Button, links oben in der Ecke */
+		color: white;
+		background-color: #064247; 	
+		display: block;
+		padding: 0.5em;
+		text-decoration: none;
+		float: left;	
+		width: auto;
+	}
+
+	#steuerung {
+		float: right;  /* Buttons 'Mein Käfer', .... , 'Inpressum' rechts ausrichten */
+	}
+
+	#steuerung li {
+		/* Buttons 'Mein Käfer', .... , 'Inpressum' */
+		list-style: none;
+		float: left;
+	}
+		
+	#steuerung a {
+		/*inaktiver Button, rechts oben in der Ecke */
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 0.5em;
+		text-decoration: none;
+		color: white;
+		background-color: rgb(128, 143, 142);
+	}	
+
+	#steuerung a:hover {
+		/*aktiver Button, rechts oben in der Ecke */
+		color: white;
+		background: #064247; 
+	}	
+
+	.menue-button {
+		/*	CSS MENÜ-Button untereinander und entsprechende Steuerung aus 
+			bei größer @media only screen and (max-width:600px) */
+		display: none;
+	}		
+
+	/* ======================= Menu-Buttons-Steuerung allgemein Ende =======================  */
+
+
+	/* ======================= Für Html-Seite =======================  */
+	header {
+		background-color: rgb(128, 143, 142);
+		width: 100%;
+		float: left;
+	}
+
+	#box1 {
+		/* Das Hash bei #box1 steht für id z.B. <div id=... */
+		min-height: 100vh;
+		background: url('Kaefer_Horizontal_Rauschen02.JPG');
+		background-repeat: no-repeat;
+		background-position: 100% 30%;
+		background-attachment: fixed;
+		background-size:46% auto;
+		background-color: #053135; /* #00272F; #012E38;*/
+	}
+	
+	#box2 {
+		min-height: 100vh;
+		background-color: #053135; /*#012E38;*/
+		width: 50%;
+	}
+
+	.My_Text {
+		/* Der Punkt bei .My_Text steht für class, z.B. <div class=.. */
+		/* Begrüßungstext-Einstellungen 
+		in Box2 <div class="My_Text"> */
+		position: auto;
+		width:auto;
+		top: 7px; 
+		padding: 1.5em;
+		color: white;
+		margin-left: 3%;
+		font-size: 18px; 
+		font-family: sans-serif;
+		/* margin-bottom: 5%; Änderung */
+	}
+
+	/* Einstellungen für Bild im Begrüßungstext (img src = "Kaefer_Horizontal_Rauschen00.JPG") */
+	/* Ohne Punkt oder Hash gilt img für alle <img ... auf der Html-Seite */
+	img {
+		display: none; /* das Bild im Begrüßungstext auszublenden */
+	}
+
+	.footer {
+		/* Für Fußzeile mit Hnweistext */
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #032124; 
+		color: white;
+		text-align: center;
+	}
+
+
+	/*	CSS MENÜ-Button untereinander und entsprechende Steuerung ein 
+			bei kleiner @media only screen and (max-width:600px) */
+	@media only screen and (max-width:600px) {
+
+		/* ======================= Menu-Buttons-Steuerung, wenn Screen-Breite kleiner 600 =======================  */
+		#bereichlogo {
+			/* Button, links oben in der Ecke 
+			Hier Einstellungen die vom #bereichlogo aus vor "@media only screen and ()..." abweichen */
+			color: white;
+		}
+
+		.menue-button {
+			/* fuer Menue auf zu */
+			background-color: rgb(128, 143, 142);      /* Farbe des Button Menu auf oder Menu zu */
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding: 0.5em;
+			color: white;
+			cursor: pointer;
+			text-decoration: none;
+		}	
+
+		#steuerung {
+			/* Buttons 'Mein Käfer', .... , 'Inpressum' links ausrichten und erstmal nicht sichtbar machen.
+			Buttons werden später sichtbar, wenn 'Button Menu auf' angeklickt wurde.*/
+			float: left;
+			width: 100%; 
+			display: none;
+			
+		}	
+
+		#steuerung li {
+			/* Buttons 'Mein Käfer', .... , 'Inpressum' */
+			width: 100%; 
+			border-top: 2px solid silver; /* Menue-Hintergrund-Rand-Farbe */
+		}	
+
+		.menue-button:hover {
+			color: white;
+			background: #064247; 	
+		}
+
+		/* die Magie, um die Steuerung einzublenden (auch auf mobile Devices) */
+		#nav-menue:target #steuerung {
+			display: block;
+		}
+		
+		/* ausblenden des Menü-Buttons zum öffnen - somit wird der zum Schließen sichtbar */
+		#nav-menue:target .menue-button-beschr-open {
+			display: none ; 
+		}	
+		/* ======================= Menu-Buttons-Steuerung, wenn Screen-Breite kleiner 600 Ende =======================  */
+
+
+
+
+		/* ======================= Ergänzungen für Html-Seite, wenn Screen-Breite kleiner 600 =======================  */
+		#box1 {
+			background: url('');
+			width: 100%; 
+			background-color: #053135;
+			/* position: fixed; eventuell löschen */
+		}
+		
+		#box2 {
+			background-color: #053135; 
+			width: 90%; /* Box2 90% breite von Box1 */
+			left: 0px;
+			margin: auto; /*Box2 zentrieren in Box1 */
+		}
+
+		.My_Text {
+			/* Begrüßungstext-Einstellungen 
+			in Box2 <div class="My_Text"> */
+			overflow: scroll;
+			height:80%; 
+			padding: 0.0em; 
+			text-align: center;
+			margin-left: 0px;
+			margin-bottom: 60px;
+		}
+		
+		/* Einstellungen für Bild im Begrüßungstext (img src = "Kaefer_Horizontal_Rauschen00.JPG") */
+		img {
+			width: 60%;
+
+			/* Die folgenden Zeilen sind zum Bild zentrieren*/
+			margin: auto;
+			padding-top: 80px;
+			display: block;
+		}
+
+		.footer {
+		/* Für Fußzeile mit Hnweistext */
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #032124; 
+			color: white;
+			text-align: center;
+		}
+
+	} /* @media only screen and (max-width:600px) --- ENDE ---  */
+
+
+
+	/* Allgemein Anweisungen */
+	* {
+		/* Button-Text-Position für alle Buttons
+		   In diesem Fall nur für die Buttons, 
+		   da alle anderen Objekte ihre Eigenschaften wo anders definiert werden*/
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+	}
+
+	section {
+		/* Allgemeines Verhalten der aktiven Buttons */
+		padding: 0.0em;
+		float: left;
+		width: 100%;	
+		background-color: #053135; 
+			
+	}
+
+	h1, p {
+		/* Text-Positionierung von Tag <h1> und <p>, Rand links rechts */
+		/* margin-left: 10px;
+		margin-right: 10px; */
+	}	
+
+
+
+</style>	
+-->
+
+</head>
+
+<body>
+	<!-- Kopfzeile -->
+	<header style="position: fixed; z-index: 1;" id="nav-menue">
+		<a href="" id="bereichlogo">Mein Käfer</a>
+		<nav id="steuerung">
+			<ul>
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="Mein_Kaefer.html">Mein Käfer</a></li>
+				<li><a href="Galerie.html">Galerie</a></li>
+				<li><a href="Arbeiten.html">Arbeiten</a></li>
+				<li><a href="Impressum.html">Impressum</a></li>
+			</ul>
+		</nav>
+		<a class="menue-button menue-button-beschr-close" 
+		href="#nav-menue-zu">MEN&Uuml; zu</a>
+		<a class="menue-button menue-button-beschr-open" 
+		href="#nav-menue">MEN&Uuml; auf</a>
+	</header>
+
+	<section>
+		
+		<div id="box1">
+			<div id="box2">
+				<div class="My_Text">
+					<div class="My_Text_IMG">
+						<img src = "Kaefer_Horizontal_Rauschen00.JPG" class="center">
+					</div>
+					<br>
+					<h1>Mein Käfer,</h1>
+					<br>
+					<p>
+						auch wenn der 1600i noch kein Oldtimer ist, Baujahr 1997, und ja ein Boxermotor mit Kat hat, 
+						so ist fast alles noch recht simple Technik. Und der Motor läuft und läuft und läuft.
+						Da hatte ich bisher keine Probleme.  
+						Sei es auf der Fahrt von Hamburg nach Italien, über den alten Brenner-Pass oder nach Berlin 
+						usw. alles reibungslos. Nur das Blech, der Rost, da muss man rechtzeitig ran.
+						Aber dann ist alles ok.<br><br>  
+						Nun bin ich aber kein gelernter Lackierer. Als gelernter Fernmeldehandwerker hatte ich zwar
+						Metallbearbeitung, aber nicht mit Lackierung zu tun. 
+						Auch macht die Metallic-Lackierung das Ganze nicht einfacher.
+						Nun ja, da die meisten Roststellen nicht so groß sind habe ich mir überlegt,
+						den Metallic-Lack mit einer Airbrush-Pistole auf zu tragen.
+						Also suchte ich mir eine Airbrush-Pistole mit einer Düse für große Flächen aus.
+						Wobei große Flächen im Modellbau sind so 3 bis 5 cm Fläche im Durchmesser. 
+						Wo durch das Lackieren größerer Teile wie z.B. das Abschlussblech vorne etwas länger gedauert hat. 
+						Musste so 3 bis 4 Schichten sprühen, bis der Lack richtig deckte. Aber da der Sprühnebel recht fein
+						und sich nur auf einen relativ kleinen Bereich ausbreitet, lassen sich Lackeierübergänge zum alten 
+						Original-Lack recht gut bewerkstelligen. Wobei zu berücksichtigen ist, dass der alte Lack meist etwas
+						ausgeblichener und dadurch etwas heller ist. Was tun, nun ich dachte, ich misch einfach etwas weiß hinzu.
+						Das war aber ein Fehler. Denn dadurch verschwand der Metallicefekt und ich hatte nur eine einfach
+						grüne Lackierung. Im Internet fand ich dann die Lösung. Es gibt für Airbrush ein weiß-metallic Lack.
+						Damit ging‘s.<br><br>
+						Ein anderes Problem mit der Lackierung, dass der neu gekaufte Original-Lack auf Wasserbasis hat, er ist leider benzinlöslich.
+						Was bei dem Tankeinfüllstutzen zum Problem wird. Denn da geht ja mal leicht ein Tropfen beim Tanken da neben.
+						Und der löst den Lack dann wieder an. Auch wenn dieser schon ein paar Monate alt ist.
+						Da hilft ein benzinfester 2-Komponenten Lack. Dazu muss aber der metallic-grüne Lack da drunter ganz durch gehärtet sein.
+						Da es in meiner Garage aber kein Strom gibt, kann ich den Lack nur an der Luft trocknen lassen.
+						So das der Lack erst ca. nach drei Monaten gänzlich durchgehärtet ist. Also nehme ich für die Stellen wo Benzin beim Tanken
+						ran kommen kann den zwei K-Lack und für den Rest den wasserlöslichen.
+						Denn mit dem kann ich auch schon nach ein paar Tagen über lackieren.<br>
+						<br><br><br><br>
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+	</section>	
+
+	<div class="footer">
+		<p style="padding: 12px;">	<u>Noch ein Hinweis:</u>
+			Für alle Infos und Hinweise auf dieser Homepage übernehme ich keine Gewähr. 
+			Das Nachmachen der beschriebenen Tätigkeiten geschieht auf eigene Verantwortung.
+		</p>
+	</div>
+
+</body>
+
+</html>
