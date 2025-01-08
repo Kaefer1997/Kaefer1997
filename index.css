@@ -226,6 +226,7 @@
 			/* Button, links oben in der Ecke 
 			Hier Einstellungen die vom #bereichlogo aus vor "@media only screen and ()..." abweichen */
 			color: white;
+			padding: 0.6em;
 		}
 
 		.menue-button {
@@ -235,7 +236,7 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			padding: 0.5em;
+			padding: 0.6em;
 			color: white;
 			cursor: pointer;
 			text-decoration: none;
@@ -254,6 +255,11 @@
 			/* Buttons 'Mein Käfer', .... , 'Inpressum' */
 			width: 100%; 
 			border-top: 2px solid silver; /* Menue-Hintergrund-Rand-Farbe */
+		}	
+
+		#steuerung a {
+			/*inaktiver Button, rechts oben in der Ecke */
+			padding: 0.6em;
 		}	
 
 		.menue-button:hover {
