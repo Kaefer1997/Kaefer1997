@@ -236,7 +236,7 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			padding: 0.6em;
+			padding: 0.7em;
 			color: white;
 			cursor: pointer;
 			text-decoration: none;
@@ -259,7 +259,7 @@
 
 		#steuerung a {
 			/*inaktiver Button, rechts oben in der Ecke */
-			padding: 0.6em;
+			padding: 0.7em;
 		}	
 
 		.menue-button:hover {
